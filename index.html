@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agnivesh Ameya - Portfolio</title>
+    <meta name="description" content="Fresher Portfolio of Agnivesh Ameya - ML Engineer & Developer">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">AA</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="AgniveshAmeya.pdf" class="resume-btn" download>Resume</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="greeting">Hello, I'm</span>
+                <h1><span class="highlight">Agnivesh Ameya</span></h1>
+                <h2>Aspiring Machine Learning Engineer</h2>
+                <p>Fresh graduate passionate about AI, Machine Learning, and Software Development</p>
+                <div class="hero-buttons">
+                    <a href="./projects.html" class="btn primary">
+                        <i class="fas fa-code"></i>
+                        View Projects
+                    </a>
+                    <a href="#contact" class="btn secondary" onclick="return scrollToContact()">
+                        <i class="fas fa-paper-plane"></i>
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Hello! I'm Agnivesh, a passionate Machine Learning Engineer and Developer based in India.
+                    </p>
+                    <p class="about-description">
+                        I specialize in developing AI and ML solutions, with a strong foundation in computer science. 
+                        Currently pursuing my B.Tech in Computer Science with a focus on AI & ML, I'm dedicated to 
+                        creating innovative solutions that make a real impact.
+                    </p>
+                    
+                    <!-- Stats Section -->
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">ML Models</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Papers</span>
+                        </div>
+                    </div>
+
+                    <!-- Interests Section -->
+                    <div class="about-interests">
+                        <h3>Areas of Interest</h3>
+                        <div class="interest-tags">
+                            <span>Deep Learning</span>
+                            <span>Computer Vision</span>
+                            <span>Full Stack</span>
+                            <span>MLOps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <!-- B.Tech -->
+                <div class="education-card">
+                    <div class="education-year">2022 - 2026</div>
+                    <div class="education-content">
+                        <div class="degree-type">Bachelor of Technology</div>
+                        <h3>Computer Science & Engineering</h3>
+                        <p class="specialization">Specialization in AI & ML</p>
+                        <div class="institution">
+                            <i class="fas fa-university"></i>
+                            HALDIA INSTITUTE OF TECHNOLOGY
+                        </div>
+                        <div class="achievements">
+                            <div class="cgpa">
+                                <i class="fas fa-star"></i>
+                                CGPA: 7.49/10
+                            </div>
+                            <div class="achievement-tags">
+                                <span>Lorem ipsum dolor sit amet.</span>
+                                <span>Lorem ipsum dolor sit.</span>
+                                <span>Lorem, ipsum dolor.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Higher Secondary -->
+                <div class="education-card">
+                    <div class="education-year">2020 - 2022</div>
+                    <div class="education-content">
+                        <div class="degree-type">Higher Secondary</div>
+                        <h3>Science Stream</h3>
+                        <div class="institution">
+                            <i class="fas fa-university"></i>
+                            DAV PUBLIC SCHOOL
+                        </div>
+                        <div class="achievements">
+                            <div class="cgpa">
+                                <i class="fas fa-star"></i>
+                                87.6%
+                            </div>
+                            <div class="achievement-tags">
+                                <span>Lorem, ipsum dolor.</span>
+                                <span>Lorem, ipsum dolor.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Matriculation -->
+                <div class="education-card">
+                    <div class="education-year">2018 - 2020</div>
+                    <div class="education-content">
+                        <div class="degree-type">Matriculation</div>
+                        <h3>ICSE Board</h3>
+                        <div class="institution">
+                            <i class="fas fa-university"></i>
+                            RED CARPET HIGH SCHOOL
+                        </div>
+                        <div class="achievements">
+                            <div class="cgpa">
+                                <i class="fas fa-star"></i>
+                                92%
+                            </div>
+                            <div class="achievement-tags">
+                                <span>Lorem, ipsum dolor.</span>
+                                <span>Lorem, ipsum dolor.</span>
+                                <span>Lorem, ipsum dolor.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Deep Learning & AI</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">PyTorch</div>
+                        <div class="skill-item">TensorFlow</div>
+                        <div class="skill-item">Neural Networks</div>
+                        <div class="skill-item">Computer Vision</div>
+                        <div class="skill-item">NLP</div>
+                        <div class="skill-item">CNN</div>
+                        <div class="skill-item">RNN</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Python & ML</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">NumPy</div>
+                        <div class="skill-item">Pandas</div>
+                        <div class="skill-item">Scikit-learn</div>
+                        <div class="skill-item">Matplotlib</div>
+                        <div class="skill-item">OpenCV</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">C</div>
+                        <div class="skill-item">Data Structures</div>
+                        <div class="skill-item">Algorithms</div>
+                        <div class="skill-item">Problem Solving</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">HTML/CSS</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">MongoDB</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">GitHub</div>
+                        <div class="skill-item">VS Code</div>
+                        <div class="skill-item">Jupyter</div>
+                        <div class="skill-item">Google Colab</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-logo">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Machine Learning Specialization</h3>
+                        <p class="issuer">DeepLearning.AI & Stanford Online</p>
+                        <a href="assets/certificates/machine-learning-cert.pdf" class="view-certificate" download>
+                            <i class="fas fa-download"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-logo">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Deep Learning Specialization</h3>
+                        <p class="issuer">DeepLearning.AI</p>
+                        <a href="assets/certificates/deep-learning-cert.pdf" class="view-certificate" download>
+                            <i class="fas fa-download"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-logo">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Full Stack Development</h3>
+                        <p class="issuer">Meta</p>
+                        <a href="assets/certificates/fullstack-cert.pdf" class="view-certificate" download>
+                            <i class="fas fa-download"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-logo">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>AI Programming with Python</h3>
+                        <p class="issuer">Udacity</p>
+                        <a href="assets/certificates/ai-programming-cert.pdf" class="view-certificate" download>
+                            <i class="fas fa-download"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-logo">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Data Science Fundamentals</h3>
+                        <p class="issuer">IBM</p>
+                        <a href="assets/certificates/data-science-cert.pdf" class="view-certificate" download>
+                            <i class="fas fa-download"></i>
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:agniveshameya2412@gmail.com">agniveshameya2412@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/agnivesh-ameya-71468a252/" target="_blank">LinkedIn Profile</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/agnivesh24" target="_blank">GitHub Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Agnivesh Ameya. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToContact() {
+            console.log('scrollToContact function called'); // Debug line
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                const navHeight = document.querySelector('.navbar').offsetHeight || 0;
+                const targetPosition = contactSection.offsetTop - navHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+                
+                return false; // Prevents default anchor behavior
+            }
+            return true;
+        }
+
+        // Test if elements exist
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Contact section exists:', !!document.getElementById('contact')); // Debug line
+            console.log('Navbar exists:', !!document.querySelector('.navbar')); // Debug line
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

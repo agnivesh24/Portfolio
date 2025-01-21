@@ -1,0 +1,211 @@
+/* Projects Page Styles */
+.projects-header {
+    padding: 8rem 2rem 4rem;
+    text-align: center;
+    background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+}
+
+.projects-header h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.projects-header p {
+    color: var(--light-text);
+    font-size: 1.2rem;
+}
+
+.projects-grid {
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-links {
+    opacity: 1;
+}
+
+.project-links a {
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: var(--primary-color);
+    transition: var(--transition);
+}
+
+.project-links a:hover {
+    transform: translateY(-3px);
+    background: var(--secondary-color);
+}
+
+.project-quick-links {
+    display: inline-flex;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.project-quick-links a {
+    color: var(--light-text);
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.project-quick-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.project-info p {
+    color: var(--light-text);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tech span {
+    background: var(--light-background);
+    color: var(--primary-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .projects-header {
+        padding: 6rem 1rem 3rem;
+    }
+
+    .projects-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .projects-grid {
+        padding: 2rem 1rem;
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-card.jellystock .project-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200"><path d="M0 150 L50 120 L100 140 L150 100 L200 130 L250 80 L300 110 L350 70 L400 90" stroke="%234f46e5" stroke-width="3" fill="none"/><path d="M0 160 L50 130 L100 150 L150 110 L200 140 L250 90 L300 120 L350 80 L400 100" stroke="%232563eb" stroke-width="2" fill="none" opacity="0.5"/></svg>');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Add these styles for the enhanced project card */
+.project-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-icon {
+    font-size: 3rem;
+    color: white;
+    opacity: 0.9;
+}
+
+.project-icon i {
+    filter: drop-shadow(0 0 10px rgba(79, 70, 229, 0.5));
+}
+
+/* Animation for the chart line */
+@keyframes chartAnimation {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.jellystock .project-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(37, 99, 235, 0.2));
+    z-index: 1;
+}
+
+.jellystock .project-image svg path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: chartAnimation 2s ease-in-out forwards;
+} 
